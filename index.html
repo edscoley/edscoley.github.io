@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>儿童游戏-益智启蒙与亲子互动游戏大全</title>
+    <meta name="description" content="儿童游戏精选平台，提供寓教于乐的儿童益智游戏、亲子互动游戏、幼儿认知游戏、儿童拼图游戏等，帮助孩子在快乐游戏中开发智力、锻炼思维，是家长放心的儿童游戏指南。">
+    <meta name="keywords" content="儿童游戏,儿童益智游戏,亲子游戏,幼儿游戏,儿童拼图,早教游戏">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+            background: #fdf7f0;
+            color: #4a3b2f;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul, ol {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff8a5c;
+            color: #fff;
+            padding: 10px 28px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #f2743c;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #ff8a5c;
+            color: #ff8a5c;
+        }
+        .btn-outline:hover {
+            background: #ff8a5c;
+            color: #fff;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: #3a2c1e;
+            margin-bottom: 8px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background: #ffb347;
+            border-radius: 4px;
+        }
+        .section-sub {
+            color: #8a7465;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mt-40 {
+            margin-top: 40px;
+        }
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        .flex-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Header */
+        .site-header {
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: #ffb347;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(255,179,71,0.3);
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            color: #3a2c1e;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #ff8a5c;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 30px;
+        }
+        .main-nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #5a4a3c;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .main-nav a:hover, .main-nav a.active {
+            color: #ff8a5c;
+            border-bottom-color: #ffb347;
+        }
+        .header-search {
+            display: flex;
+            align-items: center;
+            background: #f5efe8;
+            border-radius: 30px;
+            padding: 6px 15px;
+        }
+        .header-search input {
+            border: none;
+            background: transparent;
+            padding: 6px 10px;
+            font-size: 14px;
+            outline: none;
+            width: 140px;
+            color: #4a3b2f;
+        }
+        .header-search button {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff8a5c;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffe8d3 100%);
+            padding: 60px 0 50px;
+            border-bottom: 4px solid #ffb347;
+        }
+        .hero-wrap {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .hero-content {
+            flex: 1.1;
+        }
+        .hero-content h1 {
+            font-size: 42px;
+            font-weight: 900;
+            color: #2d1f12;
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
+        .hero-content h1 .highlight {
+            color: #ff8a5c;
+            position: relative;
+        }
+        .hero-content p {
+            font-size: 17px;
+            color: #6b5849;
+            margin-bottom: 30px;
+            max-width: 520px;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .hero-illustration {
+            flex: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-illustration .play-badge {
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle, #ffd89b, #ffb347);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            box-shadow: 0 20px 40px rgba(255,179,71,0.3);
+            text-align: center;
+        }
+        .play-badge .emoji {
+            font-size: 80px;
+            line-height: 1.2;
+        }
+        .play-badge .badge-text {
+            font-size: 20px;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+        .play-badge .badge-sub {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        /* 分类卡片 */
+        .category-section {
+            padding: 60px 0 20px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .category-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #f0e6da;
+        }
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(255,138,92,0.15);
+        }
+        .category-emoji {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+        .category-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3a2c1e;
+            margin-bottom: 8px;
+        }
+        .category-card p {
+            font-size: 13px;
+            color: #8a7465;
+            line-height: 1.5;
+        }
+
+        /* 热门游戏 */
+        .hot-section {
+            padding: 40px 0 20px;
+        }
+        .hot-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .game-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s;
+            border: 1px solid #f0e6da;
+            display: flex;
+            flex-direction: column;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-thumb {
+            height: 180px;
+            background: linear-gradient(135deg, #ffd89b, #ffb347);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            position: relative;
+        }
+        .game-thumb:nth-child(2n) {
+            background: linear-gradient(135deg, #a8e6cf, #55b89a);
+        }
+        .game-card:nth-child(3n) .game-thumb {
+            background: linear-gradient(135deg, #ffb3ba, #ff8a8a);
+        }
+        .game-card:nth-child(4n) .game-thumb {
+            background: linear-gradient(135deg, #b5d8ff, #7ab8ff);
+        }
+        .game-card:nth-child(5n) .game-thumb {
+            background: linear-gradient(135deg, #d4bfff, #a78bff);
+        }
+        .game-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(255,255,255,0.9);
+            color: #ff8a5c;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        .game-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .game-info h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3a2c1e;
+            margin-bottom: 8px;
+        }
+        .game-info p {
+            font-size: 14px;
+            color: #7a6656;
+            line-height: 1.5;
+            flex: 1;
+        }
+        .game-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px dashed #e8ddd0;
+        }
+        .game-age {
+            background: #f5efe8;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #6b5849;
+            font-weight: 600;
+        }
+        .game-link {
+            color: #ff8a5c;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* 亲子互动 */
+        .parent-section {
+            background: #fff;
+            padding: 50px 0;
+            margin: 30px 0;
+            border-top: 1px solid #f0e6da;
+            border-bottom: 1px solid #f0e6da;
+        }
+        .parent-flex {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        .parent-content {
+            flex: 1;
+        }
+        .parent-content h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #3a2c1e;
+            margin-bottom: 15px;
+        }
+        .parent-content p {
+            color: #6b5849;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .parent-tips {
+            background: #fdf7f0;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .parent-tips li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .parent-tips li:last-child {
+            margin-bottom: 0;
+        }
+        .parent-emoji {
+            flex: 0 0 30px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .parent-media {
+            flex: 0.8;
+            background: #ffe8d3;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .parent-media .big-emoji {
+            font-size: 80px;
+        }
+        .parent-media p {
+            font-weight: 600;
+            color: #6b4a2e;
+            margin-top: 15px;
+        }
+
+        /* 教育价值 */
+        .edu-section {
+            padding: 40px 0;
+        }
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 25px;
+        }
+        .edu-card {
+            background: #fdf7f0;
+            border-radius: 18px;
+            padding: 25px;
+            border-left: 4px solid #ffb347;
+        }
+        .edu-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3a2c1e;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .edu-card p {
+            font-size: 14px;
+            color: #6b5849;
+        }
+
+        /* 年龄段推荐 */
+        .age-section {
+            padding: 40px 0;
+        }
+        .age-tabs {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 25px 0 20px;
+        }
+        .age-tab {
+            background: #fff;
+            border: 2px solid #e8ddd0;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #6b5849;
+            transition: all 0.3s;
+        }
+        .age-tab:hover, .age-tab.active {
+            background: #ff8a5c;
+            border-color: #ff8a5c;
+            color: #fff;
+        }
+        .age-content-wrap {
+            background: #fff;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        .age-content {
+            display: none;
+        }
+        .age-content.active {
+            display: block;
+        }
+        .age-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ff8a5c;
+        }
+        .age-content ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .age-content li {
+            background: #fdf7f0;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 50px 0;
+            background: #f5efe8;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 30px auto 0;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            padding: 20px 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .faq-question {
+            font-size: 17px;
+            font-weight: 600;
+            color: #3a2c1e;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: "+";
+            font-size: 24px;
+            color: #ff8a5c;
+        }
+        .faq-item.open .faq-question::after {
+            content: "−";
+        }
+        .faq-answer {
+            margin-top: 12px;
+            font-size: 15px;
+            color: #6b5849;
+            line-height: 1.7;
+            display: none;
+        }
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        /* 安全提示 */
+        .safety-section {
+            padding: 30px 0;
+            background: #ffe8d3;
+        }
+        .safety-box {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            border: 2px solid #ffb347;
+        }
+        .safety-icon {
+            font-size: 50px;
+        }
+        .safety-content h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: #3a2c1e;
+        }
+        .safety-content ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px 20px;
+            margin-top: 10px;
+        }
+        .safety-content li {
+            font-size: 14px;
+            color: #6b5849;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #3a2c1e;
+            color: #d8c7b8;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-about h3 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .footer-about p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .footer-col h4 {
+            color: #ffb347;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer-col li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        .footer-col li:hover {
+            color: #ffb347;
+        }
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #a08d7c;
+        }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .header-search {
+                display: none;
+            }
+            .hero-wrap {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-btns {
+                justify-content: center;
+            }
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hot-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .parent-flex {
+                flex-direction: column;
+            }
+            .edu-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .main-nav {
+                display: none;
+            }
+            .hero-content h1 {
+                font-size: 30px;
+            }
+            .category-grid, .hot-grid, .age-content ul {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-about {
+                margin-bottom: 10px;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-wrap">
+            <div class="logo">
+                <div class="logo-icon">🎮</div>
+                <div class="logo-text">儿童<span>游戏屋</span></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#hot">热门游戏</a></li>
+                    <li><a href="#parent">亲子互动</a></li>
+                    <li><a href="#edu">教育价值</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="搜索游戏...">
+                <button aria-label="搜索">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-wrap">
+            <div class="hero-content">
+                <h1>让孩子在<span class="highlight">快乐游戏</span>中<br>启蒙成长</h1>
+                <p>精选适合不同年龄段儿童的益智游戏与亲子互动玩法，寓教于乐，锻炼思维，陪伴孩子健康快乐地成长。</p>
+                <div class="hero-btns">
+                    <a href="#hot" class="btn">开始探索游戏</a>
+                    <a href="#parent" class="btn btn-outline">亲子互动指南</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="play-badge">
+                    <div class="emoji">🧸</div>
+                    <div class="badge-text">快乐童年</div>
+                    <div class="badge-sub">益智 · 安全 · 有趣</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">游戏分类</h2>
+            <p class="section-sub">按兴趣和成长需求选择，总有一款适合孩子</p>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-emoji">🧩</div>
+                    <h3>益智拼图</h3>
+                    <p>培养观察力与空间思维</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🔢</div>
+                    <h3>数学启蒙</h3>
+                    <p>在游戏中爱上数字</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">📖</div>
+                    <h3>语言识字</h3>
+                    <p>快乐识字，趣味阅读</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🎨</div>
+                    <h3>创意绘画</h3>
+                    <p>激发艺术想象力</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🧠</div>
+                    <h3>记忆训练</h3>
+                    <p>锻炼记忆力与专注力</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🔬</div>
+                    <h3>科学探索</h3>
+                    <p>满足好奇心，动手实验</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🎵</div>
+                    <h3>音乐律动</h3>
+                    <p>感受节奏，培养乐感</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-emoji">🤝</div>
+                    <h3>社交合作</h3>
+                    <p>学会分享与团队协作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hot-section" id="hot">
+        <div class="container">
+            <h2 class="section-title">热门儿童游戏推荐</h2>
+            <p class="section-sub">家长好评如潮的精选游戏，点击即可了解玩法</p>
+            <div class="hot-grid">
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span>🧩</span>
+                        <span class="game-badge">热门</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>动物拼图乐园</h3>
+                        <p>通过拖动拼图块还原可爱动物图案，锻炼孩子的观察力和手眼协调能力，关卡难度循序渐进。</p>
+                        <div class="game-meta">
+                            <span class="game-age">3-6岁</span>
+                            <a href="#" class="game-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span>🔢</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>数字小火车</h3>
+                        <p>帮助小火车装载正确数量的货物，让孩子在游戏中认识数字、学习计数和简单的加减法。</p>
+                        <div class="game-meta">
+                            <span class="game-age">4-7岁</span>
+                            <a href="#" class="game-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span>🎨</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>创意涂色画板</h3>
+                        <p>提供丰富的涂色模板和自由画布，让孩子发挥想象力，用鲜艳色彩创造属于自己的艺术作品。</p>
+                        <div class="game-meta">
+                            <span class="game-age">3-8岁</span>
+                            <a href="#" class="game-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span>🧠</span>
+                        <span class="game-badge">新游</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>记忆翻牌高手</h3>
+                        <p>经典翻牌记忆游戏，搭配趣味卡通图案，从6张牌到24张牌逐步升级，有效锻炼记忆力。</p>
+                        <div class="game-meta">
+                            <span class="game-age">5-10岁</span>
+                            <a href="#" class="game-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span>🔤</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>拼音字母大冒险</h3>
+                        <p>跟随可爱角色闯关，认识字母和拼音，学习拼读规则，为识字和阅读打下坚实基础。</p>
+                        <div class="game-meta">
+                            <span class="game-age">4-7岁</span>
+                            <a href="#" class="game-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <span>🌍</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>小小科学家</h3>
+                        <p>通过简单安全的虚拟实验，探索自然现象，了解科学原理，培养孩子的逻辑思维和探索精神。</p>
+                        <div class="game-meta">
+                            <span class="game-age">6-12岁</span>
+                            <a href="#" class="game-link">查看详情 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parent-section" id="parent">
+        <div class="container parent-flex">
+            <div class="parent-content">
+                <h2>亲子互动游戏，陪伴是最好的教育</h2>
+                <p>亲子游戏不仅能增进父母与孩子之间的感情，还能在轻松愉快的氛围中培养孩子的各项能力。以下是一些适合家庭场景的互动游戏建议：</p>
+                <div class="parent-tips">
+                    <ul>
+                        <li><span class="parent-emoji">🏃</span><span><strong>室内运动游戏：</strong>枕头大战、障碍爬行、气球不落地等，锻炼大运动能力。</span></li>
+                        <li><span class="parent-emoji">🎭</span><span><strong>角色扮演游戏：</strong>扮演医生、厨师、超市收银员等，培养社交能力和语言表达。</span></li>
+                        <li><span class="parent-emoji">📚</span><span><strong>故事接龙游戏：</strong>家长和孩子轮流编故事，激发创造力和逻辑思维。</span></li>
+                        <li><span class="parent-emoji">🧺</span><span><strong>家务小游戏：</strong>将整理玩具、叠衣服变成竞赛游戏，培养责任感和自理能力。</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent-media">
+                <div class="big-emoji">👨‍👩‍👧</div>
+                <p>每天20分钟高质量陪伴<br>胜过2小时电子屏幕</p>
+                <p style="font-size: 14px; margin-top: 10px; font-weight: normal; color: #8a6a4a;">亲子游戏让爱流动</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="edu-section" id="edu">
+        <div class="container">
+            <h2 class="section-title">儿童游戏的教育价值</h2>
+            <p class="section-sub">玩是孩子的天性，好的游戏是成长的养分</p>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <h3>🧠 认知发展</h3>
+                    <p>益智类游戏帮助孩子理解颜色、形状、数字、字母等基本概念，锻炼逻辑推理和问题解决能力，让大脑在游戏中得到充分发展。</p>
+                </div>
+                <div class="edu-card">
+                    <h3>✋ 精细动作</h3>
+                    <p>拼图、涂色、搭积木等游戏需要手部精细操作，能有效锻炼孩子的手眼协调能力和手指灵活性，为书写等技能打好基础。</p>
+                </div>
+                <div class="edu-card">
+                    <h3>💬 语言表达</h3>
+                    <p>角色扮演、故事游戏和识字类游戏能丰富孩子的词汇量，提高语言组织与表达能力，让孩子更自信地与人交流。</p>
+                </div>
+                <div class="edu-card">
+                    <h3>🤝 社交情感</h3>
+                    <p>合作类游戏让孩子学会轮流、分享、等待和协商，理解规则的意义，培养同理心和团队合作精神。</p>
+                </div>
+                <div class="edu-card">
+                    <h3>🎯 专注力训练</h3>
+                    <p>记忆游戏、找不同等专注力游戏帮助孩子学会集中注意力，延长专注时间，这对未来的学习非常重要。</p>
+                </div>
+                <div class="edu-card">
+                    <h3>😊 情绪管理</h3>
+                    <p>游戏中的输赢体验让孩子学会面对挫折和成功，家长的正确引导有助于培养孩子健康的胜负观和情绪调节能力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="age-section">
+        <div class="container">
+            <h2 class="section-title">按年龄段选择游戏</h2>
+            <p class="section-sub">不同年龄段的孩子发展特点不同，选择适合的游戏更有效</p>
+            <div class="age-tabs">
+                <button class="age-tab active" data-age="1-2">1-2岁</button>
+                <button class="age-tab" data-age="3-4">3-4岁</button>
+                <button class="age-tab" data-age="5-6">5-6岁</button>
+                <button class="age-tab" data-age="7-8">7-8岁</button>
+                <button class="age-tab" data-age="9-12">9-12岁</button>
+            </div>
+            <div class="age-content-wrap">
+                <div class="age-content active" id="age-1-2">
+                    <h3>1-2岁 · 感官探索期</h3>
+                    <p>这个阶段的孩子通过感官认识世界，适合简单、安全的感官游戏。</p>
+                    <ul>
+                        <li>🧸 触摸感知游戏（不同材质）</li>
+                        <li>🔊 声音模仿游戏</li>
+                        <li>🌈 颜色辨认游戏</li>
+                        <li>🪀 简单抓握玩具互动</li>
+                        <li>👶 身体部位指认游戏</li>
+                        <li>📦 藏找游戏（物体恒存）</li>
+                    </ul>
+                </div>
+                <div class="age-content" id="age-3-4">
+                    <h3>3-4岁 · 想象力爆发期</h3>
+                    <p>孩子开始有丰富的想象力，喜欢角色扮演和简单规则的游戏。</p>
+                    <ul>
+                        <li>🎭 过家家角色扮演</li>
+                        <li>🧩 大块拼图游戏</li>
+                        <li>🎨 手指画与涂鸦</li>
+                        <li>🎵 音乐律动游戏</li>
+                        <li>📖 绘本故事互动</li>
+                        <li>🏃 追逐与躲藏游戏</li>
+                    </ul>
+                </div>
+                <div class="age-content" id="age-5-6">
+                    <h3>5-6岁 · 逻辑思维萌芽期</h3>
+                    <p>孩子开始理解规则，喜欢有挑战性的游戏，适合进行启蒙学习。</p>
+                    <ul>
+                        <li>🔢 数字与简单运算游戏</li>
+                        <li>🔤 拼音识字游戏</li>
+                        <li>🧩 中等难度拼图</li>
+                        <li>🎲 简单桌游（飞行棋等）</li>
+                        <li>✂️ 手工剪纸游戏</li>
+                        <li>🤔 简单推理谜题</li>
+                    </ul>
+                </div>
+                <div class="age-content" id="age-7-8">
+                    <h3>7-8岁 · 学习能力提升期</h3>
+                    <p>孩子进入小学阶段，可以玩一些更有深度和策略性的游戏。</p>
+                    <ul>
+                        <li>♟️ 策略性棋类游戏</li>
+                        <li>📚 成语接龙与词语游戏</li>
+                        <li>🔬 简单科学实验游戏</li>
+                        <li>🧠 高阶记忆挑战</li>
+                        <li>📝 趣味数学闯关</li>
+                        <li>🗺️ 地图探索游戏</li>
+                    </ul>
+                </div>
+                <div class="age-content" id="age-9-12">
+                    <h3>9-12岁 · 综合能力发展期</h3>
+                    <p>孩子具备较强的理解能力，可以挑战更复杂的游戏和项目。</p>
+                    <ul>
+                        <li>💻 图形化编程游戏</li>
+                        <li>🧩 立体拼图与模型</li>
+                        <li>📖 长篇阅读与创作游戏</li>
+                        <li>🌐 地理历史知识竞赛</li>
+                        <li>🎯 目标挑战类游戏</li>
+                        <li>🤝 团队协作拓展游戏</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title text-center" style="display: block;">关于儿童游戏的常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">孩子每天玩多长时间游戏合适？</div>
+                    <div class="faq-answer">根据儿童发展专家的建议，3-6岁儿童每天屏幕时间建议控制在1小时以内，可以分为2-3次进行。家长应优先保证孩子有足够的户外活动、阅读和亲子互动时间。对于非屏幕类的实体游戏，如拼图、积木等，可以适当延长，但仍需注意动静结合。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何选择适合孩子的儿童游戏？</div>
+                    <div class="faq-answer">首先考虑孩子的年龄和当前发展需求，选择难度适中的游戏。其次观察孩子的兴趣点，喜欢画画就选涂色类，喜欢动物就选动物主题。最重要的是家长要提前试玩，确认内容健康、无广告干扰、无需额外付费，并尽量选择有教育价值的游戏。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">电子游戏和传统游戏如何平衡？</div>
+                    <div class="faq-answer">建议以传统实体游戏为主，电子游戏为辅。实体游戏能提供更丰富的触觉体验和社交互动，而优质的电子游戏在互动反馈和学习效率上有优势。家长可以制定规则，比如每天先完成户外活动或阅读，再享受电子游戏时间，形成良好习惯。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">孩子玩游戏输了就哭闹怎么办？</div>
+                    <div class="faq-answer">这是正常的情绪反应，家长不必过度紧张。首先要接纳孩子的情绪，抱抱他并理解他的失落感。然后引导孩子看到游戏中的乐趣和进步，而不是只看结果。可以创造一些合作型游戏，让孩子体验共同努力的快乐，逐渐建立健康的胜负观。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">有哪些不需要电子设备的亲子游戏？</div>
+                    <div class="faq-answer">非常多！比如：手影游戏、折纸、搭积木、猜谜语、传声筒游戏、枕头大战、寻宝游戏、模仿动物走路、吹泡泡、玩沙子、跳房子、踢毽子等。这些游戏只需要简单的道具甚至不需要道具，就能给孩子带来极大的快乐和成长。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="safety-section">
+        <div class="container">
+            <div class="safety-box">
+                <div class="safety-icon">🛡️</div>
+                <div class="safety-content">
+                    <h3>儿童游戏安全提示</h3>
+                    <ul>
+                        <li>✅ 选择适龄游戏，避免超龄内容</li>
+                        <li>✅ 家长陪伴游戏，关注孩子反馈</li>
+                        <li>✅ 控制游戏时长，注意用眼卫生</li>
+                        <li>✅ 避免含广告或内购的免费游戏</li>
+                        <li>✅ 不轻信游戏内的陌生人信息</li>
+                        <li>✅ 定期检查游戏内容和更新</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>🧸 儿童游戏屋</h3>
+                    <p>专注为家长和孩子提供优质儿童游戏推荐与亲子互动指导，帮助孩子在快乐中学习成长。我们坚持安全、健康、有益的原则，用心筛选每一款游戏。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>游戏分类</h4>
+                    <ul>
+                        <li>益智拼图</li>
+                        <li>数学启蒙</li>
+                        <li>语言识字</li>
+                        <li>创意绘画</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>家长必读</h4>
+                    <ul>
+                        <li>游戏时间管理</li>
+                        <li>亲子互动技巧</li>
+                        <li>儿童安全上网</li>
+                        <li>教育理念分享</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li>网站介绍</li>
+                        <li>内容审核标准</li>
+                        <li>联系合作</li>
+                        <li>意见反馈</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 儿童游戏屋 | 用心守护孩子的快乐童年 | 本站所有游戏推荐仅供参考，请家长根据实际情况选择
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 折叠
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                var item = this.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+
+        // 年龄标签切换
+        document.querySelectorAll('.age-tab').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.age-tab').forEach(function(t) { t.classList.remove('active'); });
+                this.classList.add('active');
+                var age = this.getAttribute('data-age');
+                document.querySelectorAll('.age-content').forEach(function(c) { c.classList.remove('active'); });
+                var target = document.getElementById('age-' + age);
+                if (target) target.classList.add('active');
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+                      </html>
