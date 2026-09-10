@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花都酒剑仙-都市修真小说热门作品与阅读指南</title>
+    <meta name="description" content="花都酒剑仙是一部融合都市生活与古典仙侠元素的网络小说，讲述主角在现代都市中修炼剑仙之术、行侠仗义的故事。本页提供作品背景、角色介绍、章节看点、同类小说推荐及阅读指南。">
+    <meta name="keywords" content="花都酒剑仙,都市修真,仙侠小说,剑仙,网络小说,小说推荐,热门连载">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background: #f7f4ef;
+            color: #2d2a26;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: #1c1a17;
+            border-bottom: 3px solid #c9a35c;
+            padding: 14px 0;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .brand {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #f0e6d2;
+            letter-spacing: 2px;
+        }
+        .brand span {
+            color: #c9a35c;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 28px;
+        }
+        .main-nav a {
+            color: #d8cfc0;
+            font-size: 1rem;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+        }
+        .main-nav a:hover {
+            color: #f5e7c6;
+            border-bottom-color: #c9a35c;
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid #c9a35c;
+            color: #c9a35c;
+            font-size: 1.2rem;
+            padding: 4px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* 首屏 Hero */
+        .hero {
+            background: linear-gradient(135deg, #1e2b2c 0%, #3a4a3f 55%, #6b5a3a 100%);
+            color: #f5f0e6;
+            padding: 70px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            right: -10%;
+            top: -30%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(201,163,92,0.25) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-content {
+            max-width: 680px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 18px;
+            letter-spacing: 3px;
+            line-height: 1.2;
+        }
+        .hero h1 .highlight {
+            color: #e6c27e;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #d9d2c4;
+            margin-bottom: 30px;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background: #c9a35c;
+            color: #1c1a17;
+        }
+        .btn-primary:hover {
+            background: #ddb973;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            border: 1px solid #c9a35c;
+            color: #e6c27e;
+        }
+        .btn-outline:hover {
+            background: rgba(201,163,92,0.15);
+        }
+
+        /* 章节/作品信息条 */
+        .intro-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 36px 40px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 5;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-left: 6px solid #c9a35c;
+        }
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .intro-text h2 {
+            font-size: 1.6rem;
+            margin-bottom: 14px;
+            color: #1c1a17;
+        }
+        .intro-text p {
+            margin-bottom: 12px;
+            color: #4a443c;
+        }
+        .intro-meta {
+            background: #f9f6f0;
+            border-radius: 8px;
+            padding: 20px 24px;
+        }
+        .intro-meta h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #6b5a3a;
+        }
+        .meta-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dashed #d9cfbf;
+            font-size: 0.95rem;
+        }
+        .meta-item:last-child {
+            border-bottom: none;
+        }
+        .meta-item .label {
+            color: #7a6f5f;
+        }
+        .meta-item .value {
+            font-weight: 600;
+            color: #2d2a26;
+        }
+
+        /* 通用 section */
+        .section {
+            padding: 70px 0 50px;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            padding-left: 18px;
+            border-left: 6px solid #c9a35c;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-sub {
+            color: #8a7d6b;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* 角色卡 */
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .character-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 26px 22px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .character-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+        }
+        .char-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #c9a35c, #8a6d3b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 700;
+        }
+        .character-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #1c1a17;
+        }
+        .character-card .role {
+            color: #a08c6c;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .character-card p {
+            font-size: 0.9rem;
+            color: #5c554b;
+            text-align: left;
+        }
+
+        /* 看点/亮点 */
+        .highlights {
+            background: #1e2b2c;
+            color: #e8e0d2;
+        }
+        .highlights .section-title {
+            color: #f0e6d2;
+            border-left-color: #e6c27e;
+        }
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .highlight-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 30px 24px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .highlight-item .num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #c9a35c;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .highlight-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #f0e6d2;
+        }
+        .highlight-item p {
+            color: #b9b0a1;
+            font-size: 0.95rem;
+        }
+
+        /* 章节精选列表 */
+        .chapters-list {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+            overflow: hidden;
+        }
+        .chapter-row {
+            display: flex;
+            align-items: center;
+            padding: 18px 28px;
+            border-bottom: 1px solid #f0ebe3;
+            transition: background 0.2s;
+        }
+        .chapter-row:last-child {
+            border-bottom: none;
+        }
+        .chapter-row:hover {
+            background: #faf7f2;
+        }
+        .chapter-num {
+            width: 50px;
+            font-weight: 700;
+            color: #c9a35c;
+            font-size: 1.1rem;
+        }
+        .chapter-name {
+            flex: 1;
+            font-weight: 600;
+            color: #2d2a26;
+        }
+        .chapter-desc {
+            flex: 2;
+            color: #7a6f5f;
+            font-size: 0.9rem;
+            margin-right: 20px;
+        }
+        .chapter-tag {
+            background: #f0e6d2;
+            color: #6b5a3a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* 同类推荐 */
+        .recommend-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .rec-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+            border-top: 3px solid #c9a35c;
+            transition: 0.3s;
+        }
+        .rec-card:hover {
+            box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+        }
+        .rec-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #1c1a17;
+        }
+        .rec-card .tag-line {
+            color: #a08c6c;
+            font-size: 0.85rem;
+            margin-bottom: 14px;
+            display: block;
+        }
+        .rec-card p {
+            font-size: 0.92rem;
+            color: #5c554b;
+            margin-bottom: 16px;
+        }
+        .rec-link {
+            font-size: 0.9rem;
+            color: #b08d4a;
+            font-weight: 600;
+        }
+        .rec-link:hover {
+            color: #6b5a3a;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: #f0ebe3;
+        }
+        .faq-list {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 24px 30px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #2d2a26;
+            padding-left: 24px;
+            position: relative;
+        }
+        .faq-item h3::before {
+            content: "Q";
+            position: absolute;
+            left: 0;
+            color: #c9a35c;
+            font-weight: 800;
+        }
+        .faq-item p {
+            color: #5c554b;
+            padding-left: 24px;
+            font-size: 0.95rem;
+        }
+
+        /* 阅读指南 */
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .guide-step {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+        }
+        .guide-step .step-num {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #1e2b2c;
+            color: #e6c27e;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .guide-step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .guide-step p {
+            color: #6b6155;
+            font-size: 0.95rem;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #1c1a17;
+            color: #a69b8a;
+            padding: 50px 0 30px;
+            margin-top: 60px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #3a352d;
+        }
+        .footer-brand {
+            font-size: 1.4rem;
+            color: #f0e6d2;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .footer-about {
+            max-width: 360px;
+            font-size: 0.9rem;
+        }
+        .footer-links h4 {
+            color: #c9a35c;
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        .footer-links a:hover {
+            color: #e6c27e;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 24px;
+            font-size: 0.85rem;
+            color: #7a7062;
+        }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .characters-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .highlights-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .recommend-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .guide-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: #1c1a17;
+                padding: 20px;
+                border-bottom: 2px solid #c9a35c;
+            }
+            .main-nav.open {
+                display: block;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .section {
+                padding: 50px 0 30px;
+            }
+            .highlights-grid, .recommend-grid, .guide-grid {
+                grid-template-columns: 1fr;
+            }
+            .chapter-row {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .chapter-desc {
+                flex-basis: 100%;
+                margin-right: 0;
+            }
+            .intro-card {
+                padding: 24px;
+            }
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 480px) {
+            .characters-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-actions .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">花都<span>酒剑仙</span></div>
+            <button class="nav-toggle" id="navToggle">☰ 菜单</button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#intro">作品简介</a></li>
+                    <li><a href="#characters">主要角色</a></li>
+                    <li><a href="#highlights">小说看点</a></li>
+                    <li><a href="#chapters">章节精选</a></li>
+                    <li><a href="#recommend">同类推荐</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero 首屏 -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>花都<span class="highlight">酒剑仙</span></h1>
+                    <p>一壶浊酒，三尺青锋，都市繁华中自有剑心通明。当现代都市与古老仙侠碰撞，一个关于成长、守护与逍遥的故事就此展开。</p>
+                    <div class="hero-actions">
+                        <a href="#chapters" class="btn btn-primary">开始阅读</a>
+                        <a href="#intro" class="btn btn-outline">了解作品</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品信息卡片 -->
+        <div class="container">
+            <div class="intro-card" id="intro">
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <h2>作品背景与故事梗概</h2>
+                        <p>《花都酒剑仙》是一部都市修真题材的网络小说，以现代都市为舞台，融入古典仙侠的修炼体系与江湖侠义。主角在繁华都市中隐藏剑仙身份，白天是普通的都市青年，夜晚则化身仗剑行走的修行者，在科技与法术交织的世界里，探寻大道真谛。</p>
+                        <p>故事围绕“酒”与“剑”两条线索展开：酒是主角感悟天地的媒介，剑则是他快意恩仇的依仗。书中既有都市生活的烟火气，也有仙侠世界的奇诡波澜，形成了别具一格的反差魅力。</p>
+                    </div>
+                    <div class="intro-meta">
+                        <h3>作品速览</h3>
+                        <div class="meta-item"><span class="label">题材类型</span><span class="value">都市 / 修真 / 仙侠</span></div>
+                        <div class="meta-item"><span class="label">主角设定</span><span class="value">隐世剑仙 · 酒中悟道</span></div>
+                        <div class="meta-item"><span class="label">故事基调</span><span class="value">热血成长 · 侠义逍遥</span></div>
+                        <div class="meta-item"><span class="label">适合读者</span><span class="value">喜欢都市异能、仙侠修炼的读者</span></div>
+                        <div class="meta-item"><span class="label">阅读氛围</span><span class="value">轻松中带燃点，日常中藏玄机</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主要角色 -->
+        <section class="section" id="characters">
+            <div class="container">
+                <h2 class="section-title">主要角色 <span class="section-sub">Character Profile</span></h2>
+                <div class="characters-grid">
+                    <div class="character-card">
+                        <div class="char-icon">酒</div>
+                        <h3>主角 · 醉尘</h3>
+                        <span class="role">酒剑仙传人</span>
+                        <p>表面是花都市井中的普通青年，实则身负上古剑修传承。嗜酒如命，却能在醉意中领悟剑道至理。性格洒脱不羁，重情重义。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="char-icon">月</div>
+                        <h3>女主 · 苏婉清</h3>
+                        <span class="role">都市白领 / 神秘背景</span>
+                        <p>干练聪慧的职场女性，偶然卷入灵异事件后与主角相识。看似柔弱，却在关键时刻展现出非凡的勇气与洞察力。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="char-icon">剑</div>
+                        <h3>挚友 · 韩铁衣</h3>
+                        <span class="role">武术世家子弟</span>
+                        <p>性格耿直，崇尚古武。在见识到主角的真正实力后，一心追随，成为其都市修行路上的重要伙伴与助力。</p>
+                    </div>
+                    <div class="character-card">
+                        <div class="char-icon">玄</div>
+                        <h3>神秘人 · 玄机子</h3>
+                        <span class="role">隐世高人</span>
+                        <p>行踪飘忽的老道士，似乎知晓主角身世的全部秘密。每隔一段时间便会出现，以半醉半醒的姿态指点主角修行迷津。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 小说看点 -->
+        <section class="section highlights" id="highlights">
+            <div class="container">
+                <h2 class="section-title">《花都酒剑仙》的独特看点</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <span class="num">01</span>
+                        <h3>都市与仙侠的巧妙融合</h3>
+                        <p>不局限于传统的深山修炼，而是让剑仙走入写字楼、地铁站与深夜大排档。当法术碰上现代科技，碰撞出意想不到的戏剧效果。</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="num">02</span>
+                        <h3>“酒剑”双修的角色魅力</h3>
+                        <p>主角以酒入道，每一场战斗都带有几分醉意与诗意。剑法招式命名风雅，战斗描写兼具力量感与画面美感。</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="num">03</span>
+                        <h3>鲜明立体的配角群像</h3>
+                        <p>无论是都市中的同事朋友，还是修行界的对手盟友，每个角色都有独立的动机与成长弧光，拒绝脸谱化。</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="num">04</span>
+                        <h3>张弛有度的叙事节奏</h3>
+                        <p>日常情节轻松幽默，充满生活气息；战斗与冲突部分则干净利落，不拖泥带水。张弛之间，阅读体验流畅舒适。</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="num">05</span>
+                        <h3>蕴含东方哲思的主题</h3>
+                        <p>在快意恩仇之外，作品探讨了“入世”与“出世”的平衡、力量与责任的关系，让爽文有了更深层的回味空间。</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="num">06</span>
+                        <h3>连续更新的稳定节奏</h3>
+                        <p>作品保持稳定的更新频率，剧情连贯不注水，每一个小高潮都为后续的大伏笔做铺垫，适合长期追读。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 章节精选 -->
+        <section class="section" id="chapters">
+            <div class="container">
+                <h2 class="section-title">章节精选 <span class="section-sub">章节看点速览</span></h2>
+                <div class="chapters-list">
+                    <div class="chapter-row">
+                        <span class="chapter-num">第1章</span>
+                        <span class="chapter-name">醉卧花都</span>
+                        <span class="chapter-desc">主角在深夜街头醉酒，意外引动体内剑气，初显不凡身手，为后续剧情埋下伏笔。</span>
+                        <span class="chapter-tag">开篇</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="chapter-num">第12章</span>
+                        <span class="chapter-name">月下剑鸣</span>
+                        <span class="chapter-desc">为救被灵异事件困扰的苏婉清，主角首次在都市中展露真正剑术，月色与剑光交织。</span>
+                        <span class="chapter-tag">名场面</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="chapter-num">第27章</span>
+                        <span class="chapter-name">酒馆论道</span>
+                        <span class="chapter-desc">与玄机子在街边小酒馆对饮，看似闲聊，实则透露修行界大势与主角身世线索。</span>
+                        <span class="chapter-tag">伏笔</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="chapter-num">第45章</span>
+                        <span class="chapter-name">地下室惊魂</span>
+                        <span class="chapter-desc">韩铁衣卷入古武派系纷争，主角深入地下拳场，以剑破敌，兄弟情谊进一步加深。</span>
+                        <span class="chapter-tag">热血</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="chapter-num">第63章</span>
+                        <span class="chapter-name">剑心通明</span>
+                        <span class="chapter-desc">主角在废弃道观中闭关，历经心魔考验，剑道境界迎来关键突破，战力全面升华。</span>
+                        <span class="chapter-tag">突破</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="chapter-num">第80章</span>
+                        <span class="chapter-name">都市夜行人</span>
+                        <span class="chapter-desc">修行界的暗流终于涌向普通人的生活，主角不得不在公众视野与守护秘密之间做出抉择。</span>
+                        <span class="chapter-tag">转折</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 同类作品推荐 -->
+        <section class="section" id="recommend">
+            <div class="container">
+                <h2 class="section-title">同类小说推荐 <span class="section-sub">如果喜欢这部作品，不妨一试</span></h2>
+                <div class="recommend-grid">
+                    <div class="rec-card">
+                        <h3>《都市之仙帝归来》</h3>
+                        <span class="tag-line">都市修真 · 强者归来</span>
+                        <p>讲述仙界至尊重回都市，弥补遗憾、再踏巅峰的故事。爽点密集，适合喜欢快速升级流的读者。</p>
+                        <a href="#" class="rec-link">了解作品 →</a>
+                    </div>
+                    <div class="rec-card">
+                        <h3>《我有一壶酒》</h3>
+                        <span class="tag-line">都市异能 · 轻松日常</span>
+                        <p>以酒葫芦为媒介，主角能酿出各种神奇药酒，在都市中开起小酒馆，解决各路奇人异事的烦恼。</p>
+                        <a href="#" class="rec-link">了解作品 →</a>
+                    </div>
+                    <div class="rec-card">
+                        <h3>《剑起都市》</h3>
+                        <span class="tag-line">仙侠重生 · 热血战斗</span>
+                        <p>古代剑修重生现代，在灵气稀薄的世界中逆天而行。战斗描写凌厉，世界观设定严谨。</p>
+                        <a href="#" class="rec-link">了解作品 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 阅读指南 -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">阅读指南 <span class="section-sub">如何更好地享受《花都酒剑仙》</span></h2>
+                <div class="guide-grid">
+                    <div class="guide-step">
+                        <span class="step-num">1</span>
+                        <h3>从第一章开始沉浸</h3>
+                        <p>建议按照章节顺序阅读，前期看似平凡的日常描写中，其实埋藏了众多与后期剧情呼应的细节线索。</p>
+                    </div>
+                    <div class="guide-step">
+                        <span class="step-num">2</span>
+                        <h3>留意酒与剑的隐喻</h3>
+                        <p>“酒”代表主角对世俗生活的眷恋与感悟，“剑”则象征其超脱凡俗的力量。两者交替出现，暗示主角内心的平衡。</p>
+                    </div>
+                    <div class="guide-step">
+                        <span class="step-num">3</span>
+                        <h3>享受配角的高光时刻</h3>
+                        <p>除了主角，苏婉清、韩铁衣以及玄机子等角色都拥有独立的故事线。关注他们的成长，会发现更多惊喜。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq-section" id="faq">
+            <div class="container">
+                <h2 class="section-title">常见问题 FAQ</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>《花都酒剑仙》是完结作品还是连载中？</h3>
+                        <p>目前该作品处于连载状态，作者保持稳定的更新频率。建议关注官方平台或正规阅读渠道，以获取最新章节信息。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>这部小说适合什么类型的读者？</h3>
+                        <p>如果你喜欢都市背景下的轻松日常，又对仙侠修炼、剑道战斗感兴趣，那么本书的“都市+仙侠”混搭风格会非常适合你。它的节奏明快，不虐主，阅读门槛较低。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>书中的修炼体系复杂吗？</h3>
+                        <p>作品采用了较为经典的修真境界框架，但并未过度复杂化。作者将修炼过程与都市生活紧密结合，读者无需额外设定知识也能顺畅理解。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>可以在哪里看到这部作品？</h3>
+                        <p>建议通过正规网络文学平台搜索书名“花都酒剑仙”进行阅读。支持正版，才能让创作者持续产出优质内容。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">花都酒剑仙 · 书友小站</div>
+                    <p class="footer-about">一个为《花都酒剑仙》读者提供作品信息、角色解析与书单推荐的交流小站。我们热爱这个故事，也欢迎每一位新读者的到来。</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#intro">作品简介</a></li>
+                        <li><a href="#characters">主要角色</a></li>
+                        <li><a href="#highlights">小说看点</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>延伸内容</h4>
+                    <ul>
+                        <li><a href="#chapters">章节精选</a></li>
+                        <li><a href="#recommend">同类推荐</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">© 2025 花都酒剑仙书友小站 · 本站仅提供作品介绍与信息分享，内容版权归原作者及首发平台所有。</p>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端导航切换
+        document.addEventListener('DOMContentLoaded', function() {
+            var toggle = document.getElementById('navToggle');
+            var nav = document.getElementById('mainNav');
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    nav.classList.toggle('open');
+                });
+            }
+        });
+    </script>
+</body>
+  </html>
