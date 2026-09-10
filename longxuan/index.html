@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙轩导航-精选网址分类与高效上网入口指南</title>
+    <meta name="description" content="龙轩导航是一个精选优质网址的分类导航平台，聚合常用工具、学习资源、娱乐影音、技术社区等实用网站，帮助用户高效找到需要的网络资源，提升上网体验。">
+    <meta name="keywords" content="龙轩导航,网址导航,精选网站,实用工具,学习资源,网站分类,上网导航">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部 */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #2d8cf0, #1a5bb5);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a5bb5;
+            letter-spacing: 0.5px;
+        }
+        .header-search {
+            flex: 0 1 320px;
+            display: flex;
+            align-items: center;
+            background: #f0f2f5;
+            border-radius: 20px;
+            padding: 6px 16px;
+            border: 1px solid #e0e0e0;
+            transition: border-color 0.2s;
+        }
+        .header-search:focus-within {
+            border-color: #2d8cf0;
+            background: #fff;
+        }
+        .header-search input {
+            border: none;
+            outline: none;
+            background: transparent;
+            flex: 1;
+            font-size: 14px;
+            color: #333;
+        }
+        .header-search button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #888;
+            padding: 0 4px;
+        }
+        .header-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-size: 14px;
+            color: #555;
+        }
+        .header-links a:hover {
+            color: #2d8cf0;
+        }
+        .header-links .btn-register {
+            background: #2d8cf0;
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 18px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .header-links .btn-register:hover {
+            background: #1a5bb5;
+            color: #fff;
+        }
+
+        /* 主导航 */
+        .main-nav {
+            background: #ffffff;
+            border-top: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav-inner a {
+            display: block;
+            padding: 12px 18px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #444;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-inner a:hover,
+        .nav-inner a.active {
+            color: #2d8cf0;
+            border-bottom-color: #2d8cf0;
+        }
+        .nav-inner a.active {
+            color: #1a5bb5;
+        }
+
+        /* 首屏 / 特色区域 */
+        .hero-section {
+            background: linear-gradient(135deg, #e8f1ff 0%, #f5f9ff 100%);
+            padding: 50px 0 30px;
+            border-bottom: 1px solid #e6ecf5;
+        }
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            flex: 1 1 380px;
+        }
+        .hero-text h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a3a5c;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        .hero-text p {
+            font-size: 16px;
+            color: #4a6a8a;
+            margin-bottom: 20px;
+            max-width: 540px;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-num {
+            font-size: 26px;
+            font-weight: 700;
+            color: #2d8cf0;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: #6b7a8f;
+        }
+        .hero-cards {
+            flex: 1 1 360px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .hero-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eef2f7;
+            transition: all 0.2s;
+        }
+        .hero-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(45, 140, 240, 0.1);
+            border-color: #b8d4f0;
+        }
+        .hero-card .card-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .hero-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .hero-card p {
+            font-size: 13px;
+            color: #8899aa;
+            margin-bottom: 0;
+        }
+
+        /* 搜索分类快捷入口 */
+        .quick-cats {
+            background: #fff;
+            padding: 18px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .quick-cats-inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .quick-cats span {
+            font-size: 14px;
+            color: #999;
+            margin-right: 4px;
+        }
+        .quick-cats a {
+            font-size: 14px;
+            color: #2d8cf0;
+            background: #f0f7ff;
+            padding: 5px 14px;
+            border-radius: 16px;
+            transition: background 0.2s;
+        }
+        .quick-cats a:hover {
+            background: #dcedff;
+        }
+
+        /* 主要内容区 */
+        .main-content {
+            padding: 30px 0 40px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a3a5c;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 14px;
+        }
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 4px;
+            height: 20px;
+            background: #2d8cf0;
+            border-radius: 2px;
+        }
+
+        /* 分类模块网格 */
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-bottom: 40px;
+        }
+        .cat-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #eef0f3;
+            transition: all 0.2s;
+        }
+        .cat-card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            border-color: #d0dce8;
+        }
+        .cat-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+        .cat-card-header .cat-icon {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            background: #f0f7ff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cat-card-header h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .cat-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .cat-links a {
+            font-size: 14px;
+            color: #4a6a8a;
+            padding: 6px 8px;
+            border-radius: 6px;
+            transition: background 0.15s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cat-links a:hover {
+            background: #f5f9ff;
+            color: #2d8cf0;
+        }
+        .cat-links a .arrow {
+            font-size: 12px;
+            color: #b0c4d8;
+        }
+        .cat-links a:hover .arrow {
+            color: #2d8cf0;
+        }
+        .cat-more {
+            margin-top: 14px;
+            display: inline-block;
+            font-size: 13px;
+            color: #1a5bb5;
+            font-weight: 500;
+        }
+        .cat-more:hover {
+            text-decoration: underline;
+        }
+
+        /* 实用工具推荐区域 */
+        .tool-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 40px;
+            border: 1px solid #eef0f3;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+        }
+        .tool-item {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 16px 10px;
+            text-align: center;
+            transition: all 0.2s;
+            border: 1px solid #eef2f7;
+        }
+        .tool-item:hover {
+            background: #edf5ff;
+            border-color: #b8d4f0;
+            transform: translateY(-2px);
+        }
+        .tool-item .tool-icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+        .tool-item h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .tool-item p {
+            font-size: 12px;
+            color: #8a9bb0;
+        }
+
+        /* 内容区域（资讯/更新） */
+        .news-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .news-list {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #eef0f3;
+        }
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f5f6f8;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-date {
+            flex-shrink: 0;
+            background: #f0f7ff;
+            border-radius: 8px;
+            padding: 4px 8px;
+            font-size: 12px;
+            color: #2d8cf0;
+            font-weight: 500;
+        }
+        .news-content a {
+            font-size: 15px;
+            font-weight: 500;
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 2px;
+            transition: color 0.15s;
+        }
+        .news-content a:hover {
+            color: #2d8cf0;
+        }
+        .news-content p {
+            font-size: 13px;
+            color: #7a8ba0;
+        }
+        .side-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #eef0f3;
+            margin-bottom: 24px;
+        }
+        .side-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a3a5c;
+        }
+        .rank-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .rank-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+        }
+        .rank-num {
+            width: 24px;
+            height: 24px;
+            background: #f0f2f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: #666;
+            flex-shrink: 0;
+        }
+        .rank-item:nth-child(1) .rank-num {
+            background: #2d8cf0;
+            color: #fff;
+        }
+        .rank-item:nth-child(2) .rank-num {
+            background: #5cadff;
+            color: #fff;
+        }
+        .rank-item:nth-child(3) .rank-num {
+            background: #8ac6ff;
+            color: #fff;
+        }
+        .rank-item a {
+            color: #3a5a7a;
+            transition: color 0.15s;
+            flex: 1;
+        }
+        .rank-item a:hover {
+            color: #2d8cf0;
+        }
+
+        /* 使用技巧 */
+        .tips-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #eef0f3;
+            margin-bottom: 40px;
+        }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .tip-item {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 16px;
+            border-left: 3px solid #2d8cf0;
+        }
+        .tip-item h4 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .tip-item p {
+            font-size: 14px;
+            color: #5a6a7a;
+        }
+
+        /* FAQ部分 */
+        .faq-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #eef0f3;
+            margin-bottom: 40px;
+        }
+        .faq-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #f0f2f5;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #2c3e50;
+        }
+        .faq-question::after {
+            content: "+";
+            font-size: 22px;
+            color: #2d8cf0;
+            font-weight: 400;
+        }
+        .faq-answer {
+            font-size: 14px;
+            color: #5a6a7a;
+            padding-right: 30px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #1a2b3c;
+            color: #a0b8cc;
+            padding: 40px 0 20px;
+            margin-top: 20px;
+        }
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .footer-col {
+            flex: 1 1 200px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 14px;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 14px;
+            padding: 4px 0;
+            color: #a0b8cc;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover {
+            color: #fff;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 13px;
+            border-top: 1px solid #2a3d50;
+            margin-top: 30px;
+            color: #7a8fa3;
+        }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .cat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .tool-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-inner {
+                flex-direction: column;
+            }
+            .header-search {
+                flex: 1 1 200px;
+                order: 3;
+                margin-top: 10px;
+                width: 100%;
+            }
+            .header-inner {
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 600px) {
+            .cat-grid {
+                grid-template-columns: 1fr;
+            }
+            .tool-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-cards {
+                grid-template-columns: 1fr;
+            }
+            .hero-text h1 {
+                font-size: 24px;
+            }
+            .header-links {
+                display: none;
+            }
+            .nav-inner a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            .footer-inner {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">龙</div>
+            <div class="logo-text">龙轩导航</div>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="搜索网站或工具...">
+            <button>🔍</button>
+        </div>
+        <div class="header-links">
+            <a href="#">收藏夹</a>
+            <a href="#">最近访问</a>
+            <a href="#">登录</a>
+            <a href="#" class="btn-register">注册</a>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="#" class="active">首页</a>
+        <a href="#">实用工具</a>
+        <a href="#">学习资源</a>
+        <a href="#">影音娱乐</a>
+        <a href="#">技术社区</a>
+        <a href="#">设计素材</a>
+        <a href="#">效率办公</a>
+        <a href="#">更多分类</a>
+    </div>
+</nav>
+
+<section class="hero-section">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1>发现优质网站，从这里开始</h1>
+            <p>龙轩导航为您精心筛选和分类互联网上的优质资源。无论是实用工具、学习平台还是娱乐社区，都能快速找到，助您高效上网。</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-num">2000+</div>
+                    <div class="stat-label">精选网站</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">15</div>
+                    <div class="stat-label">大类划分</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">每日更新</div>
+                    <div class="stat-label">资源推荐</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-cards">
+            <div class="hero-card">
+                <div class="card-icon">⚡</div>
+                <h3>快速直达</h3>
+                <p>常用网站一键访问</p>
+            </div>
+            <div class="hero-card">
+                <div class="card-icon">📚</div>
+                <h3>学习专区</h3>
+                <p>优质课程与文档</p>
+            </div>
+            <div class="hero-card">
+                <div class="card-icon">🛠️</div>
+                <h3>在线工具</h3>
+                <p>免安装即用</p>
+            </div>
+            <div class="hero-card">
+                <div class="card-icon">💡</div>
+                <h3>效率提升</h3>
+                <p>工作学习好帮手</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="quick-cats">
+    <div class="container quick-cats-inner">
+        <span>热门搜索：</span>
+        <a href="#">AI 工具</a>
+        <a href="#">在线 PS</a>
+        <a href="#">代码学习</a>
+        <a href="#">电子书</a>
+        <a href="#">免费图库</a>
+        <a href="#">视频剪辑</a>
+        <a href="#">考研资料</a>
+        <a href="#">图标下载</a>
+    </div>
+</div>
+
+<main class="main-content container">
+
+    <!-- 分类导航模块 -->
+    <section>
+        <h2 class="section-title">精选分类导航</h2>
+        <div class="cat-grid">
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">🔍</div>
+                    <h3>实用工具</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">在线格式转换 <span class="arrow">→</span></a>
+                    <a href="#">PDF 处理工具 <span class="arrow">→</span></a>
+                    <a href="#">网络测速 <span class="arrow">→</span></a>
+                    <a href="#">二维码生成器 <span class="arrow">→</span></a>
+                    <a href="#">临时邮箱 <span class="arrow">→</span></a>
+                    <a href="#">OCR 文字识别 <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">💻</div>
+                    <h3>技术开发</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">GitHub 趋势 <span class="arrow">→</span></a>
+                    <a href="#">Stack Overflow <span class="arrow">→</span></a>
+                    <a href="#">MDN 文档 <span class="arrow">→</span></a>
+                    <a href="#">菜鸟教程 <span class="arrow">→</span></a>
+                    <a href="#">LeetCode <span class="arrow">→</span></a>
+                    <a href="#">CodePen <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">🎨</div>
+                    <h3>设计素材</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">免费图库 Unsplash <span class="arrow">→</span></a>
+                    <a href="#">图标库 Font Awesome <span class="arrow">→</span></a>
+                    <a href="#">配色工具 Coolors <span class="arrow">→</span></a>
+                    <a href="#">字体下载 <span class="arrow">→</span></a>
+                    <a href="#">Dribbble <span class="arrow">→</span></a>
+                    <a href="#">即时设计 <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">🎓</div>
+                    <h3>学习提升</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">Coursera 课程 <span class="arrow">→</span></a>
+                    <a href="#">中国大学 MOOC <span class="arrow">→</span></a>
+                    <a href="#">Bilibili 课堂 <span class="arrow">→</span></a>
+                    <a href="#">豆瓣读书 <span class="arrow">→</span></a>
+                    <a href="#">知乎专栏 <span class="arrow">→</span></a>
+                    <a href="#">网易公开课 <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 便捷导航区域 -->
+    <section>
+        <h2 class="section-title">其他热门分类</h2>
+        <div class="cat-grid">
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">🎬</div>
+                    <h3>影音娱乐</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">Bilibili <span class="arrow">→</span></a>
+                    <a href="#">YouTube 镜像 <span class="arrow">→</span></a>
+                    <a href="#">爱奇艺 <span class="arrow">→</span></a>
+                    <a href="#">腾讯视频 <span class="arrow">→</span></a>
+                    <a href="#">网易云音乐 <span class="arrow">→</span></a>
+                    <a href="#">豆瓣电影 <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">📰</div>
+                    <h3>资讯阅读</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">今日头条 <span class="arrow">→</span></a>
+                    <a href="#">澎湃新闻 <span class="arrow">→</span></a>
+                    <a href="#">少数派 <span class="arrow">→</span></a>
+                    <a href="#">36 氪 <span class="arrow">→</span></a>
+                    <a href="#">IT 之家 <span class="arrow">→</span></a>
+                    <a href="#">虎嗅 <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">🛒</div>
+                    <h3>购物生活</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">淘宝 <span class="arrow">→</span></a>
+                    <a href="#">京东 <span class="arrow">→</span></a>
+                    <a href="#">拼多多 <span class="arrow">→</span></a>
+                    <a href="#">什么值得买 <span class="arrow">→</span></a>
+                    <a href="#">美团 <span class="arrow">→</span></a>
+                    <a href="#">大众点评 <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+            <div class="cat-card">
+                <div class="cat-card-header">
+                    <div class="cat-icon">📁</div>
+                    <h3>资源下载</h3>
+                </div>
+                <div class="cat-links">
+                    <a href="#">MSDN 我告诉你 <span class="arrow">→</span></a>
+                    <a href="#">GitHub Releases <span class="arrow">→</span></a>
+                    <a href="#">正版软件商店 <span class="arrow">→</span></a>
+                    <a href="#">爱盘 <span class="arrow">→</span></a>
+                    <a href="#">知乎电子书 <span class="arrow">→</span></a>
+                    <a href="#">书格 <span class="arrow">→</span></a>
+                </div>
+                <a href="#" class="cat-more">查看全部 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色工具推荐 -->
+    <section class="tool-section">
+        <h2 class="section-title">🏆 本周精选工具</h2>
+        <div class="tool-grid">
+            <div class="tool-item">
+                <div class="tool-icon">🤖</div>
+                <h4>AI 写作助手</h4>
+                <p>智能生成文案</p>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">🖼️</div>
+                <h4>图片压缩</h4>
+                <p>批量处理</p>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">🔗</div>
+                <h4>短链接生成</h4>
+                <p>简洁分享</p>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">📊</div>
+                <h4>在线思维导图</h4>
+                <p>快速梳理</p>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">🌐</div>
+                <h4>网页存档</h4>
+                <p>永久保存</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 更新动态 + 排行榜 -->
+    <div class="news-grid">
+        <div class="news-list">
+            <h2 class="section-title">📢 最新收录与更新</h2>
+            <div class="news-item">
+                <span class="news-date">02-18</span>
+                <div class="news-content">
+                    <a href="#">新增 AI 绘画工具集：Stable Diffusion 在线版等 12 个站点收录</a>
+                    <p>涵盖提示词工程、模型分享与在线生成等方向。</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">02-17</span>
+                <div class="news-content">
+                    <a href="#">效率办公分类新增远程协作、在线文档工具 8 个</a>
+                    <p>适合团队与个人使用，部分支持免费版。</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">02-16</span>
+                <div class="news-content">
+                    <a href="#">学习资源更新：新增计算机科学公开课合集导航</a>
+                    <p>整理自国内外知名高校，含中文字幕资源。</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">02-15</span>
+                <div class="news-content">
+                    <a href="#">设计素材分类新增 3D 模型免费下载站</a>
+                    <p>支持 glTF/OBJ 格式，可用于个人与商业项目。</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">02-14</span>
+                <div class="news-content">
+                    <a href="#">影音娱乐分类优化：更新高清影视资源导航</a>
+                    <p>已过滤失效链接，补充替代站点。</p>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div class="side-card">
+                <h3>🔥 热门站点排行</h3>
+                <div class="rank-list">
+                    <div class="rank-item"><span class="rank-num">1</span><a href="#">在线工具箱</a></div>
+                    <div class="rank-item"><span class="rank-num">2</span><a href="#">GitHub</a></div>
+                    <div class="rank-item"><span class="rank-num">3</span><a href="#">Bilibili</a></div>
+                    <div class="rank-item"><span class="rank-num">4</span><a href="#">知乎</a></div>
+                    <div class="rank-item"><span class="rank-num">5</span><a href="#">少数派</a></div>
+                    <div class="rank-item"><span class="rank-num">6</span><a href="#">百度网盘</a></div>
+                </div>
+            </div>
+            <div class="side-card">
+                <h3>💬 用户推荐</h3>
+                <div class="rank-list">
+                    <div class="rank-item"><span class="rank-num">✓</span><a href="#">「设计导航」分类很全，效率提升不少</a></div>
+                    <div class="rank-item"><span class="rank-num">✓</span><a href="#">希望增加更多开源软件镜像站</a></div>
+                    <div class="rank-item"><span class="rank-num">✓</span><a href="#">每日更新很及时，收藏夹备用了</a></div>
+                    <div class="rank-item"><span class="rank-num">✓</span><a href="#">学习资源分类真实用，考研党必备</a></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- 使用小贴士 -->
+    <section class="tips-section">
+        <h2 class="section-title">💡 高效使用龙轩导航</h2>
+        <div class="tips-grid">
+            <div class="tip-item">
+                <h4>使用 Ctrl+D 收藏</h4>
+                <p>将龙轩导航设为浏览器首页或书签，方便随时访问，快速找到所需网站。</p>
+            </div>
+            <div class="tip-item">
+                <h4>善用搜索框</h4>
+                <p>在顶部搜索框直接输入网站名称或功能关键词，可快速定位目标网站，不用逐层翻找分类。</p>
+            </div>
+            <div class="tip-item">
+                <h4>关注每日更新</h4>
+                <p>我们每天会新增经过验证的优质网站，并移除失效链接，建议常回来看看最新收录。</p>
+            </div>
+            <div class="tip-item">
+                <h4>提交网站建议</h4>
+                <p>如果发现某个优质网站未被收录，或链接失效，欢迎通过反馈页面告知我们，共建高质量导航。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <h2 class="section-title">❓ 常见问题</h2>
+        <div class="faq-item">
+            <div class="faq-question">龙轩导航收录网站的标准是什么？</div>
+            <div class="faq-answer">我们主要收录内容优质、界面友好、实用性强的网站，优先选择免费或提供良好免费体验的资源。对于需要付费才能使用的工具，也会标注说明，确保信息透明。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">网站链接打不开怎么办？</div>
+            <div class="faq-answer">首先请确认网络连接是否正常，部分网站可能需要特殊网络环境才能访问。如果确认链接已失效，欢迎通过页面底部的反馈渠道告知我们，我们会尽快核查并替换。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">是否支持用户提交新网站？</div>
+            <div class="faq-answer">支持。我们非常欢迎用户推荐优质网站，经过审核后会将合适的资源收录到对应分类，方便更多用户发现和使用。</div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>关于龙轩</h4>
+            <a href="#">网站介绍</a>
+            <a href="#">加入我们</a>
+            <a href="#">联系方式</a>
+            <a href="#">友情链接</a>
+        </div>
+        <div class="footer-col">
+            <h4>常用分类</h4>
+            <a href="#">实用工具</a>
+            <a href="#">学习资源</a>
+            <a href="#">技术开发</a>
+            <a href="#">设计素材</a>
+        </div>
+        <div class="footer-col">
+            <h4>帮助与反馈</h4>
+            <a href="#">使用帮助</a>
+            <a href="#">意见反馈</a>
+            <a href="#">失效报告</a>
+            <a href="#">收录申请</a>
+        </div>
+        <div class="footer-col">
+            <h4>关注我们</h4>
+            <a href="#">微信公众号</a>
+            <a href="#">微博</a>
+            <a href="#">RSS 订阅</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 龙轩导航 | 致力于提供优质网址导航服务</p>
+        <p style="margin-top: 6px; font-size: 12px;">本站仅提供导航服务，所有资源均来自互联网，版权归原作者所有</p>
+    </div>
+</footer>
+
+<script>
+    // FAQ 展开收起
+    document.querySelectorAll('.faq-question').forEach(function(q) {
+        q.addEventListener('click', function() {
+            var answer = this.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                this.classList.add('active');
+            } else {
+                answer.style.display = 'none';
+                this.classList.remove('active');
+            }
+        });
+        // 默认收起
+        q.nextElementSibling.style.display = 'none';
+    });
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+                      </html>
